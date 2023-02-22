@@ -1,9 +1,9 @@
-package Seminar1;
+package Seminar1.Product;
 
 public class Product {
-    String name;
-    int price;
-    Product(String name, int price){
+    private String name;
+    private int price;
+    public Product(String name, int price){
         this.name = name;
         this.price = price;
     }
@@ -13,7 +13,7 @@ public class Product {
     public String getName(){
         return this.name;
     }
-    public Integer getPrice(){
+    public int getPrice(){
         return this.price;
     }
     public void setName(String name){
@@ -26,4 +26,5 @@ public class Product {
     public String toString(){
         return name + ": " + price;
     }
+
 }
